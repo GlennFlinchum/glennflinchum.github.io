@@ -3,124 +3,134 @@
 
 <!-- Shows title on tab -->
 <head>
-    <title>Tables and Forms</title> 
+    <title>Tables and Forms</title>
 </head>
 
 <body> <!-- Body start-->
     <form> <!-- Form Start-->
 
         <h1>Pizza Ordering</h1>
-    
+
         <h2>Contact Information</h2>
 
-            <!-- Detects if name is valid and outputs message if not inputed -->
-            <label for="nameTextBox">Name:</label>
-            <input type="text" name="name" id="nameTextBox" required title="Enter Your Name"
-                oninvalid="this.setCustomValidity('Enter Your Name')"
-                oninput="this.setCustomValidity('')"><br>
-    
-            <!-- Detects invaled phone number and shows required format -->
-            <label for="passwordTextBox">Phone:</label>
-            <input type="tel" name="inName" id="passwordTextBox" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter Your Phone Number"
-                oninvalid="this.setCustomValidity('Enter Your Phone Number, Format: 000-000-0000')"
-                oninput="this.setCustomValidity('')"><br>
-    
-            <!-- Detects invalid email and shows required format -->
-            <label for="emailTextBox">Email:</label>
-            <input type="email" name="inName" id="emailTextBox" required title="Enter Your Email"
-                oninvalid="this.setCustomValidity('Enter Your Email, Format: email@domain.com')"
-                oninput="this.setCustomValidity('')"><br>
-    
+        <!-- Detects if name is valid and outputs message if not inputed -->
+        <label for="nameTextBox">Name:</label>
+        <input type="text" name="name" id="nameTextBox" required 
+            title="Enter Your Name"
+            oninvalid="this.setCustomValidity('Enter Your Name')" oninput="this.setCustomValidity('')"><br>
+
+        <!-- Detects invaled phone number and shows required format -->
+        <label for="phoneTextBox">Phone:</label>
+        <input type="tel" name="phoneNumber" id="phoneTextBox" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            title="Enter Your Phone Number"
+            oninvalid="this.setCustomValidity('Enter Your Phone Number, Format: 000-000-0000')"
+            oninput="this.setCustomValidity('')"><br>
+
+        <!-- Detects invalid email and shows required format -->
+        <label for="emailTextBox">Email:</label>
+        <input type="email" name="email" id="emailTextBox" required 
+            title="Enter Your Email"
+            oninvalid="this.setCustomValidity('Enter Your Email, Format: email@domain.com')"
+            oninput="this.setCustomValidity('')"><br>
+
         <h2>Select Pizza Size</h2>
-            <!-- User must select pizza size, anything but "--Select Size--" -->
-            <label for="pizzaSize">Pizza Size:</label>
-            <select name="pizzaSize" id="pizzaSize" required
-                    oninvalid="this.setCustomValidity('Select a pizza size')"
-                    oninput="this.setCustomValidity('')">
-                <option value="">--Select Size--</option>
-                <option>Medium</option>
-                <option>Large</option>
-                <option>XLarge</option>
-            </select>
-    
-    
+        <!-- User must select pizza size, anything but "--Select Size--" -->
+        <!-- Used Google Gemini to add value parameter-->
+        <label for="pizzaSize">Pizza Size:</label>
+        <select name="pizzaSize" id="pizzaSize" required 
+            oninvalid="this.setCustomValidity('Select a pizza size')"
+            oninput="this.setCustomValidity('')">
+            <option value="">--Select Size--</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="XLarge">XLarge</option>
+        </select>
+
         <h2>Select Sauce</h2>
-            <!-- User must select 1 of 3 options -->
-            <input type="radio" name="pizzaSauce" required><label>Marinara</label><br>
-            <input type="radio" name="pizzaSauce" required><label>Ranch</label><br>
-            <input type="radio" name="pizzaSauce" required><label>No Sauce</label><br>
-    
-        
+
+        <!-- User must select 1 of 3 options -->
+        <!-- Used Google Gemini to add value parameter-->
+        <input type="radio" name="sauces" id="marinara" value="marinara" required><label for="marinara">Marinara</label><br>
+        <input type="radio" name="sauces" id="ranch" value="ranch" required><label for="ranch">Ranch</label><br>
+        <input type="radio" name="sauces" id="none" value="none" required><label for="none">No Sauce</label><br>
+
         <h2>Select Toppings</h2>
-            <!-- Input not requred -->
-            <input type="checkbox"><label>Pepperioni</label>
-            <input type="checkbox"><label>Sausage</label><br>
-            <input type="checkbox"><label>Mushroom</label>
-            <input type="checkbox"><label>Pineapple</label><br>
-            <input type="checkbox"><label>Peppers</label>
-            <input type="checkbox"><label>Onions</label><br>
-    
-    
+        <!-- Input not requred -->
+        <!-- Used Google Gemini to add value parameter-->
+        <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni"><label for="pepperoni">Pepperioni</label>
+        <input type="checkbox" name="toppings" id="sausage" value="sausage"><label for="sausage">Sausage</label><br>
+        <input type="checkbox" name="toppings" id="mushroom" value="mushroom"><label for="mushroom">Mushroom</label>
+        <input type="checkbox" name="toppings" id="pineapple" value="pineapple"><label for="pineapple">Pineapple</label><br>
+        <input type="checkbox" name="toppings" id="peppers" value="peppers"><label for="peppers">Peppers</label>
+        <input type="checkbox" name="toppings" id="onions" value="onions"><label for="onions">Onions</label><br>
+
+
         <h2>Additional Instructions</h2>
 
-            <!-- User is able to input text and stretch text field -->
-            <!-- Input not required -->
-            <textarea name="additional instructions">Add instructions</textarea><br>
-            
-            <!-- Submit button checks document for required fields and resets form-->
-            <input type="submit" value="Submit!"><br><br>
-    
-        <!-- Favorite games table --> 
-        <table border="1"> 
-            <!-- <thead>List of My Favorite Games</thead> -->
-            <caption>List of My Favorite Games </caption>
+        <!-- User is able to input text and stretch text field -->
+        <!-- Input not required -->
+        <textarea name="additional instructions">Add instructions</textarea><br>
 
-            <!-- Table Column Headers -->
+        <!-- Submit button checks document for required fields and resets form-->
+        <input type="submit" value="Submit!"><br><br>
+
+    </form> <!-- Form End-->
+
+    <!-- Favorite games table -->
+    <table border="1">
+        <!-- <thead>List of My Favorite Games</thead> -->
+        <caption>List of My Favorite Games </caption>
+
+        <!-- Table Column Headers -->
+        <thead>
             <tr>
                 <th>Developer</th>
                 <th>Title</th>
                 <th>Year</th>
             </tr>
-            
+        </thead>
+
+        <tbody>
             <!-- Activision, Call of Duty Black Ops, 2010 -->
             <tr>
                 <td rowspan="3">Activision</td> <!-- Developer cell spans 3 rows -->
                 <td>Call of Duty: Black Ops</td>
                 <td>2010</td>
             </tr>
-    
+
             <!-- Activision, Call of Duty Black Ops: 2, 2012 -->
             <tr>
                 <td>Call of Duty: Black Ops 2</td>
                 <td>2012</td>
             </tr>
-    
+
             <!-- Activision, Call of Duty Black Ops: 3, 2015 -->
             <tr>
                 <td>Call of Duty: Black Ops 3</td>
                 <td>2015</td>
             </tr>
-            
+
             <!-- Ubisoft, For Honor, 2017 -->
             <tr>
                 <td>Ubisoft</td>
                 <td>For Honor</td>
                 <td>2017</td>
             </tr>
-            
+
             <!-- Supercall, Clash Royale, 2016 -->
             <tr>
                 <td>Supercell</td>
                 <td>Clash Royale</td>
                 <td>2016</td>
             </tr>
-    
+
             <!-- # of games, cell spans all 3 columns -->
             <tr>
                 <td colspan="3">Count: 5</td>
             </tr>
-        </table>
-    </form> <!-- Form End-->
+        </tbody>
+
+    </table> <!-- End of Table-->
 
 </body> <!--Body End-->
 
