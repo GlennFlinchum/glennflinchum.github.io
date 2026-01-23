@@ -21,7 +21,7 @@
     
             <!-- Detects invaled phone number and shows required format -->
             <label for="passwordTextBox">Phone:</label>
-            <input type="phone" name="inName" id="passwordTextBox" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter Your Phone Number"
+            <input type="tel" name="inName" id="passwordTextBox" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter Your Phone Number"
                 oninvalid="this.setCustomValidity('Enter Your Phone Number, Format: 000-000-0000')"
                 oninput="this.setCustomValidity('')"><br>
     
