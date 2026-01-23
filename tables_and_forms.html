@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Shows title on tab -->
+<head>
+    <title>Tables and Forms</title> 
+</head>
+
+<body> <!-- Body start-->
+    <form> <!-- Form Start-->
+
+        <h1>Pizza Ordering</h1>
+    
+        <h2>Contact Information</h2>
+
+            <!-- Detects if name is valid and outputs message if not inputed -->
+            <label for="nameTextBox">Name:</label>
+            <input type="text" name="name" id="nameTextBox" required title="Enter Your Name"
+                oninvalid="this.setCustomValidity('Enter Your Name')"
+                oninput="this.setCustomValidity('')"><br>
+    
+            <!-- Detects invaled phone number and shows required format -->
+            <label for="passwordTextBox">Phone:</label>
+            <input type="phone" name="inName" id="passwordTextBox" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter Your Phone Number"
+                oninvalid="this.setCustomValidity('Enter Your Phone Number, Format: 000-000-0000')"
+                oninput="this.setCustomValidity('')"><br>
+    
+            <!-- Detects invalid email and shows required format -->
+            <label for="emailTextBox">Email:</label>
+            <input type="email" name="inName" id="emailTextBox" required title="Enter Your Email"
+                oninvalid="this.setCustomValidity('Enter Your Email, Format: email@domain.com')"
+                oninput="this.setCustomValidity('')"><br>
+    
+        <h2>Select Pizza Size</h2>
+            <!-- User must select pizza size, anything but "--Select Size--" -->
+            <label for="pizzaSize">Pizza Size:</label>
+            <select name="pizzaSize" id="pizzaSize" required
+                    oninvalid="this.setCustomValidity('Select a pizza size')"
+                    oninput="this.setCustomValidity('')">
+                <option value="">--Select Size--</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XLarge</option>
+            </select>
+    
+    
+        <h2>Select Sauce</h2>
+            <!-- User must select 1 of 3 options -->
+            <input type="radio" name="pizzaSauce" required><label>Marinara</label><br>
+            <input type="radio" name="pizzaSauce" required><label>Ranch</label><br>
+            <input type="radio" name="pizzaSauce" required><label>No Sauce</label><br>
+    
+        
+        <h2>Select Toppings</h2>
+            <!-- Input not requred -->
+            <input type="checkbox"><label>Pepperioni</label>
+            <input type="checkbox"><label>Sausage</label><br>
+            <input type="checkbox"><label>Mushroom</label>
+            <input type="checkbox"><label>Pineapple</label><br>
+            <input type="checkbox"><label>Peppers</label>
+            <input type="checkbox"><label>Onions</label><br>
+    
+    
+        <h2>Additional Instructions</h2>
+
+            <!-- User is able to input text and stretch text field -->
+            <!-- Input not required -->
+            <textarea name="additional instructions">Add instructions</textarea><br>
+            
+            <!-- Submit button checks document for required fields and resets form-->
+            <input type="submit" value="Submit!"><br><br>
+    
+        <!-- Favorite games table --> 
+        <table border="1"> 
+            <!-- <thead>List of My Favorite Games</thead> -->
+            <caption>List of My Favorite Games </caption>
+
+            <!-- Table Column Headers -->
+            <tr>
+                <th>Developer</th>
+                <th>Title</th>
+                <th>Year</th>
+            </tr>
+            
+            <!-- Activision, Call of Duty Black Ops, 2010 -->
+            <tr>
+                <td rowspan="3">Activision</td> <!-- Developer cell spans 3 rows -->
+                <td>Call of Duty: Black Ops</td>
+                <td>2010</td>
+            </tr>
+    
+            <!-- Activision, Call of Duty Black Ops: 2, 2012 -->
+            <tr>
+                <td>Call of Duty: Black Ops 2</td>
+                <td>2012</td>
+            </tr>
+    
+            <!-- Activision, Call of Duty Black Ops: 3, 2015 -->
+            <tr>
+                <td>Call of Duty: Black Ops 3</td>
+                <td>2015</td>
+            </tr>
+            
+            <!-- Ubisoft, For Honor, 2017 -->
+            <tr>
+                <td>Ubisoft</td>
+                <td>For Honor</td>
+                <td>2017</td>
+            </tr>
+            
+            <!-- Supercall, Clash Royale, 2016 -->
+            <tr>
+                <td>Supercell</td>
+                <td>Clash Royale</td>
+                <td>2016</td>
+            </tr>
+    
+            <!-- # of games, cell spans all 3 columns -->
+            <tr>
+                <td colspan="3">Count: 5</td>
+            </tr>
+        </table>
+    </form> <!-- Form End-->
+
+</body> <!--Body End-->
+
+</html> <!-- HTML end-->
