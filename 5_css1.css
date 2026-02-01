@@ -1,0 +1,50 @@
+* {
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+#paragraph2 {
+    background-color: white;
+    border: 5px solid green;
+    margin: 20px;
+    padding: 30px;
+    line-height: 2;
+    width: 800px;
+}
+
+.blue {
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+ /* figure out how to only change w3schools.com text.
+    also ask if the html could be edited or only css */
+#w3link {
+    color: darkred;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th {
+    background-color: lightgray;
+    
+}
+
+td {
+    background-color: white;
+}
+ 
