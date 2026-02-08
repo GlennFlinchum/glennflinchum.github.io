@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-left: 15%;
+}
+
+#jumpMenu {
+    padding-top: 30px;
+    left: 0;
+    text-align: center;
+    background-color: lightgray;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    overflow: auto;
+}
+
+#jumpMenu a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: red;
+    position: fixed;
+    overflow: auto;
+    right: 0;
+    width: 85%;
+}
+
+header p {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#headerNav {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#headerNav button {
+    color: white;
+    background-color: blue;
+    padding: 15px 80px;
+    margin: 0px 20px;
+    border: hidden;
+}
+
+#container {
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+main h1 {
+    text-align: center;
+    padding-top: 160px;
+}
+
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10 {
+    width: 300px;
+    padding: 20px;
+}
+
+#thanks {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+footer {
+    margin-left: 30px;
+}
