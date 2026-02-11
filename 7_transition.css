@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-left: 15%;
+}
+
+main h1 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#menuItems {
+    left: 0;
+    text-align: center;
+    background-color: black;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    overflow: auto;
+}
+
+#menuItems button {
+    background-color: blue;
+    color: white;
+    padding: 15px 8px;
+    width: 100%;
+}
+
+#recentArticles:hover {
+    background-color: goldenrod;
+}
+
+#recentArticles:hover + #jumpMenu, 
+#jumpMenu:hover {
+    display: block;
+}
+
+#jumpMenu li a:hover, #menuItems button:hover {
+    color: black;
+    background-color: darkred;
+}
+
+#jumpMenu {
+    display: none;
+    list-style: none;
+    background-color: goldenrod;
+    padding: 8px;
+}
+
+header {
+    background-color: red;
+    position: fixed;
+    overflow: auto;
+    right: 0;
+    width: 85%;
+}
+
+header p {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#container {
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+#container article {
+    width: 300px;
+    padding: 20px;
+    color: gray;
+    transition: color 2s, font-size 2s;
+}
+
+#container article:hover {
+    color: black;
+    font-size: larger;
+}
+
+#container article p:first-of-type::first-letter {
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#container article p:last-of-type:after {
+    content: url(arrow.png);
+}
+
+#thanks {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+footer {
+    margin-left: 20px;
+}
