@@ -1,0 +1,73 @@
+@media screen and (max-width: 412px) {
+    header {
+        padding: 2px;
+        font-weight: bold;
+        margin: 0;
+        border: 3px, dotted, red;
+    }
+    header h1 {
+        color: red;
+    }
+
+    #profExp h3 {
+        color: darkred;
+    }
+
+    #skills {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin: 2px;
+        border: 2px, solid, orange;
+    }
+
+    #skills li {
+        list-style: none;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    body article h2 {
+        text-decoration-line: underline;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    header {
+        font-size: 40px;
+        padding: 2px;
+        font-weight: bold;
+        margin: 0;
+        border: 3px, dotted, blue;
+        text-align: center;
+    }
+    header h1 {
+        color: blue;
+    }
+
+    article h2 {
+        text-align: center;
+    }
+
+    #profExp h3{
+        color: royalblue;
+    }
+
+
+    body {
+        font-size: 40px;
+    }
+
+    body article h2 {
+        text-decoration-line: underline;
+    }
+
+    #skills {
+            display: flex;
+            padding: 2px;
+            margin: 2px;
+            border: 4px, orange, solid;
+    }
+}
