@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+
+#main {
+    height: 100%;
+    border: red, 5px, solid;
+    background-color: white;
+    border-radius: 40px;
+    margin: 16px;
+    padding: 12px;
+    text-align: center;
+}
+
+.pokeMoves {
+    margin: 0px 5px;
+    padding: 1px 80px;
+}
+
+#pokeImg, #pokeInput, #pokeAudio, #addTeam {
+    margin: 10px;
+}
+
+table {
+    border: 2px, black, solid;
+    display: flex;
+    justify-content: center;
+    padding: 5px 15px;
+    margin: 10px;
+}
