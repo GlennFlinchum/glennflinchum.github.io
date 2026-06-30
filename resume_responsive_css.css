@@ -2,7 +2,6 @@
 :root {
     --primary-color: #3f74aa; /* Professional Navy Blue */
     --text-color: #333333;    /* Charcoal for readability */
-    --bg-color: #ffffff;
     --border-color: #e0e0e0;
 }
 
@@ -10,10 +9,9 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--bg-color);
     max-width: 850px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 40px 10px;
 }
 
 /* --- Header & Headshot --- */
@@ -30,7 +28,7 @@ header {
 #headshot-img {
     width: 200px;
     height: 200px;
-    border-radius: 50%; /* Makes the image a perfect circle */
+    border-radius: 50%; /* Makes the image a circle */
     object-fit: cover;
     border: 4px solid var(--primary-color);
 }
@@ -79,23 +77,14 @@ section h3 {
 }
 
 /* Make Project links inherit header styling */
-section h3 a {
+a {
     color: var(--text-color);
     text-decoration: none;
 }
 
-section h3 a:hover {
+a:hover {
     color: var(--primary-color);
     text-decoration: underline;
-}
-
-section ul {
-    margin: 0;
-    padding-left: 25px;
-}
-
-section li {
-    margin-bottom: 6px;
 }
 
 /* --- Skills Section (Pill Badges) --- */
