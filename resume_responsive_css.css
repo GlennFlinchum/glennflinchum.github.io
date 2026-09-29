@@ -3,11 +3,13 @@
     --primary-color: #3f74aa; /* Professional Navy Blue */
     --text-color: #333333;    /* Charcoal for readability */
     --border-color: #e0e0e0;
+    --background-color: #f2f0ef;
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
+    background-color: var(--background-color);
     color: var(--text-color);
     max-width: 850px;
     margin: 0 auto;
@@ -16,7 +18,7 @@ body {
 
 /* --- Header & Headshot --- */
 header {
-    text-align: center;
+    text-align: justify;
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 25px;
     margin-bottom: 35px;
@@ -38,6 +40,17 @@ header h1 {
     color: var(--primary-color);
     font-size: 2.8rem;
     letter-spacing: -0.5px;
+}
+
+#profSummary {
+    padding: 12px;
+    /* background-color: #3f74aa; */
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+}
+
+#profLinks, #pdfLink {
+    text-align: center;
 }
 
 header p {
@@ -88,14 +101,14 @@ a:hover {
 }
 
 /* --- Skills Section (Pill Badges) --- */
-#skillsList {
+.skillsList {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     gap: 12px;
 }
 
-#skillsList li {
+.skillsList li {
     list-style: none;
     background-color: #f0f4f8;
     color: var(--primary-color);
