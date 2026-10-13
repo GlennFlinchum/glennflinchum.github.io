@@ -1,4 +1,4 @@
 # glennflinchum.github.io
-This is my GitHub IO for my HTML code. 
+This is my GitHub IO for my code. 
 
-Please visit https://glennflinchum.github.io/resume.html for my personal portfolio!
+Please visit https://glennflinchum.github.io/resume for my personal portfolio!
